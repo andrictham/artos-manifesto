@@ -1,0 +1,162 @@
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* #Site Styles
+================================================== */
+
+.logo {
+	float:right;
+	margin-top: 20px;
+	}
+
+.content img {
+	max-width: 100px;
+	width: 200px; //Old IE support
+	padding: 0 0 5px 0;
+	margin: 0 auto 0 auto;
+}
+
+/* #Page Styles
+================================================== */
+
+.nav {
+			float: left;
+			margin-top: 45px;
+		}
+
+
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		h1 {
+			font-size: 40px !important;
+			line-height: 45px !important;
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		hr {margin-bottom: 30px !important;}
+
+		body {
+			font-size: 18px !important;
+			line-height: 32px !important;
+		}
+
+		.header {
+			text-align: center;
+		}
+
+		.logo {
+			float:none;
+			margin: 25px 0 20px 0;
+		}
+
+		h1 {
+			font-size: 38px !important;
+			line-height: 60px !important;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+		.logo {
+			float:none;
+			width: 100px;
+			margin: 25px 0 5px 0;
+		}
+
+		h1 {
+			font-size: 36px !important;
+			line-height: 45px !important;
+		}
+
+		h4 {
+			font-size: 20px !important;
+			line-height: 30px !important;
+		}
+
+		.content img {
+			width: 80px;
+			margin-bottom: 5px;
+		}
+
+		.nav {
+			float: left;
+			margin-top: 45px;
+		}
+
+		hr {
+			margin-bottom: 30px !important;
+		}
+
+		.header {
+			text-align: center;
+		}
+
+		body {
+			font-size: 18px !important;
+			line-height: 32px !important;
+		}
+
+		p {
+			margin-bottom: 24px !important;
+		}
+
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) { }
+
+
+/* #font-face
+================================================== */
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/proximanova-light-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('fonts/proximanova-light-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('fonts/proximanova-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('fonts/proximanova-light-webfont.svg#ProximaNovaLight') format('svg'); /* Legacy iOS */
+	font-weight: lighter;
+	}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/proximanova-regular-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('fonts/proximanova-regular-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('fonts/proximanova-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('fonts/proximanova-regular-webfont.svg#ProximaNovaRegular') format('svg'); /* Legacy iOS */
+	font-weight: normal;
+	}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('fonts/proximanova-semibold-webfont.eot'); /* IE9 Compat Modes */
+	src: url('fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('fonts/proximanova-semibold-webfont.woff') format('woff'), /* Modern Browsers */
+	     url('fonts/proximanova-semibold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+	     url('fonts/proximanova-semibold-webfont.svg#ProximaNovaSemibold') format('svg'); /* Legacy iOS */
+	font-weight: bold;
+	}
+
+@font-face {
+	font-family: 'Garamond';
+	src: url('fonts/EBGaramond12-Italic.eot'); /* IE9 Compat Modes */
+	src: url('fonts/EBGaramond12-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	     url('fonts/EBGaramond12-Italic.woff') format('woff'); /* Modern Browsers */
+	}
